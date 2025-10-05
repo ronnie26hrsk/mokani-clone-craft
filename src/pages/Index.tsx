@@ -1,21 +1,19 @@
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { Hero } from "@/components/Hero";
-import { IDCard } from "@/components/IDCard";
-import { Projects } from "@/components/Projects";
-import { Skills } from "@/components/Skills";
-import { Contact } from "@/components/Contact";
-import { Footer } from "@/components/Footer";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
+import { HeroSection } from "@/components/HeroSection";
+import { AboutSection } from "@/components/AboutSection";
+import { SkillsSection } from "@/components/SkillsSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
+import { ContactSection } from "@/components/ContactSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <ThemeToggle />
-      <Hero />
-      <IDCard />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen relative">
+      <AnimatedBackground />
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
     </div>
   );
 };
